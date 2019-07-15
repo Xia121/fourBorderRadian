@@ -23,11 +23,16 @@
 6. 用props进行传值
 7. 用sloit作为内容插槽
 
+## 需要参数和参数作用 ##
+1. arc: border-radius 边框弯曲弧度 比如你是右下角弯曲就传值 '0 0 20px 0'
+2. arcSrc： 共有 topLeft topRight bottomLeft bottomRight 这些参数 比如你是右下角弯曲就传值 'bottomRight'
+3. colors： 顾名思义这是边框颜色 因为 边框和四个角的颜色不同所以就需要连个颜色 比如内边框为#2d6c90 四角的边框颜色为#153a4f 你应该传值:  ['#2d6c90','#153a4f']
 
 ## 完成 ##
 具体代码可以点击我的github地址
 因为用的是css-model大家可以根据具体业务进行修改  难是不难  主要的是思路~~~
 
 [github地址点击](https://github.com/Xia121/fourBorderRadian.git)
+
 
 
