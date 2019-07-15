@@ -1,0 +1,68 @@
+@import '../../assets/css/variables';
+@module-cls: ~'@{prefix}smallborder';
+
+.@{module-cls} {
+  height: 100%;
+  width: 100%;
+  border: 1px solid;
+  position: relative;
+  &-small {
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    background-origin: border-box;
+    box-shadow: inset 0px 0px 10px 4px rgba(46, 126, 243 0.2);
+  }
+  &-topLeft {
+    position: absolute;
+    top:-1px;
+    left: -1px;
+    width: 20px;
+    height: 20px;
+    z-index: 3;
+    border-radius: 20px 0 0 0;
+    border: 1px solid;
+    border-right: none;
+    border-bottom: none;
+  }
+
+  &-topRight {
+    position: absolute;
+    top:-1px;
+    right: -1px;
+    width: 20px;
+    height: 20px;
+    z-index: 3;
+    border-radius: 0 20px 0 0;
+    border: 1px solid;
+    border-left: none;
+    border-bottom: none;
+  }
+
+  &-bottomLeft {
+    position: absolute;
+    bottom:-1px;
+    left: -1px;
+    width: 20px;
+    height: 20px;
+    z-index: 3;
+    border-radius: 0 0 0 20px;
+    border: 1px solid;
+    border-right: none;
+    border-top: none;
+  }
+  &-bottomRight {
+    position: absolute;
+    bottom:-1px;
+    right: -1px;
+    width: 20px;
+    height: 20px;
+    z-index: 3;
+    border-radius: 0 0 20px 0;
+    border: 1px solid;
+    border-left: none;
+    border-top: none;
+  }
+}
